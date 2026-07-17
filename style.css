@@ -2,47 +2,73 @@ body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f4f4;
+    transition:0.4s;
 }
 
 header{
     background:#0066cc;
     color:white;
-    text-align:center;
     padding:30px;
+    text-align:center;
 }
 
 .container{
     width:80%;
-    margin:auto;
-    margin-top:40px;
+    margin:40px auto;
     background:white;
     padding:30px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    box-shadow:0 0 12px rgba(0,0,0,.2);
+}
+
+.card{
+    background:#eef5ff;
+    border-left:6px solid #0066cc;
+    padding:20px;
+    margin:25px 0;
 }
 
 button{
+    padding:12px 20px;
+    margin:10px 5px;
     background:#0066cc;
     color:white;
     border:none;
-    padding:12px 20px;
-    cursor:pointer;
     border-radius:5px;
-    font-size:16px;
+    cursor:pointer;
+    font-size:15px;
 }
 
 button:hover{
     background:#004999;
 }
 
-#message{
-    margin-top:20px;
+.status{
     color:green;
     font-weight:bold;
 }
 
+#message{
+    margin-top:20px;
+    font-weight:bold;
+    color:#006600;
+}
+
+.dark{
+    background:#222;
+    color:white;
+}
+
+.dark .container{
+    background:#333;
+}
+
+.dark .card{
+    background:#444;
+    border-left:6px solid orange;
+}
+
 footer{
     text-align:center;
-    margin-top:60px;
     padding:20px;
 }
